@@ -7,14 +7,12 @@
 	<meta name="author" content="Zach Glazer">
 	<title> Zach Glazer - Software Development </title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="css/narrow.css">
+  <link rel="stylesheet" href="css/mystyle.css">
 	<link rel="shortcut icon" href="res/favicon.png">
-
 </head>
 
 <body>
-
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
@@ -23,83 +21,119 @@
           <li><a href="#project">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <h3 class="text-muted">Personal Portfolio</h3>
+        <h3 class="text-muted">Zach Glazer <small>Madison, WI</small></h3>
       </div>
 
       <div class="jumbotron">
-      	<img src="res/self2.jpg" class="img-circle" height="180px">
-        <h1>Zach Glazer</h1>
-        <p class="lead">Hello, my name is Zach. I am a student at UW-Madison with a certificate in computer
-        	science and a BS in biochemistry, looking to pursue a career in software development. 
-        </p>
-        <p><a class="btn btn-lg btn-success" href="http://github.com/zglazer" role="button">GitHub</a>
-        <a class="btn btn-lg btn-success" href="http://lnkd.in/bbT8dYX" role="button">LinkedIn</a></p>
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+              <img src="res/self2.jpg" class="img-circle" height="180px">
+            </div>
+            <div class="back">
+              <img src="res/self2.jpg" class="img-circle" height="180px">
+            </div>
+          </div> <!-- end flipper -->
+        </div> <!-- end flip-container --> 
 
+        <h2>Professional Software Developer</h2>
+        <p class="lead">Hello, my name is Zach Glazer. I am a software engineer living in Madison, Wisconsin. 
+          My interest lies in using computers to make our lives more fun, creative, and more productive. 
+        </p>
+        <p><a class="btn btn-primary btn-lg" href="http://github.com/zglazer" role="button">GitHub</a>
+        <a class="btn btn-primary btn-lg" href="http://lnkd.in/bbT8dYX" role="button">LinkedIn</a></p>
       </div>
 
       <div class="row marketing">
         <div class="col-lg-12">
-          <h1><a name="about"></a>About Me</h1>
+          <h1 class=""><a name="about"></a>About Me</h1>
           <p>
-          	I am currently a student at UW-Madison studying computer science. I have had a long interest in computers but have
-          	only recently started to pursue software development as a career. I have a BS in biochemistry from UW-Madison and 
-          	a certificate in computer science from UW-Madison. 
+          	I am a recent graduate of UW-Madison, having studied computer science and biochemistry. I have had a long interest in computers but have
+          	only recently started pursuing software development as a career.
           </p>
           <p>
           	I received my BS in biochemistry in December 2010 and soon after accepted 
-          	a position at Epic Systems Corporation in Madison, WI. After 2 years of work I decided I wanted to further my education in 
+          	a position at Epic Systems Corporation in Madison, WI. After 2 years of hard work I decided I wanted to further my education in 
           	computer sciences. In December 2013 I was awarded a certificate in computer sciences from UW-Madison. 
-          	I am now taking more classes at UW-Madison while preparing for a future career in professional software development.
           </p>
-          <p><strong>Languages: Java, Python, C++, C</strong></p>
-          <p><strong>Interests: Databases, Artificial Intelligence, Human Computer Interaction </strong></p>
-          
-          <h1><a name="project"></a>Project List</h4>
-          <p class="lead">
-          	Most of my projects and contributions are listed on my <a href="http://github.com/zglazer"> GitHub page</a>. However,
-          	some of my school projects and current projects are highlighted below.
+          <p>
+            In my free time I enjoy learning new programming frameworks and tools. Recently I have been working with 
+            Python and the Flask web microframework.
           </p>
 
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <div class="panel-title"><h5>Technical Skills</h5></div>
+            </div>
+              <div class="panel-body">
+                <table class="table table-hover">
+                  <tr>
+                    <th>Python</th>
+                    <th>Java</th>
+                    <th>C / C++</th>
+                  </tr>
+                  <tr>
+                    <td>Flask</td>
+                    <td>Struts 2</td>
+                    <td>Language</td>
+                  </tr>
+                  <tr>
+                    <td>SQLAlchemy</td>
+                    <td>Hibernate</td>
+                    <td></td>
+                  </tr>
+                </table>
+                <p><strong>Operating Systems:</strong> UNIX</p>
+                <p><strong>Frameworks/Tools:</strong> Flask, Struts 2, SQLAlchemy, Hibernate</p>
+                <p><strong>Interests:</strong> Databases, Artificial Intelligence, Human Computer Interaction</p>
+                </table>
+              </div>
+          </div> <!-- end panel -->
+          
+
+          <h1 class=""><a name="project"></a>Project List</h1>
+          <p class="lead">
+          	Some of my recent and current projects are highlighted below.
+          </p>
+
+          <h4><a href="">Bookkeepr</a> - a minimal Flask application to keep track of books</h4>
+          <p class="">
+            This was a personal project aimed at creating a simple social networking site. Its main purpose was to 
+            give me more experience with Python and web development. The website is fully functional and ready to use. 
+            It gives the user a simple way to track his books. More info coming soon.
+          </p>
+          <p><strong>Skills: Python, Flask, SQLAlchemy ORM</strong></p>
+
           <h4><a href="https://bitbucket.org/zglazer/csx_compiler">CSX Compiler</a> - a compiler for the CSX language written in Java</h4>
-          <p>
+          <p class="">
             This was the final project for a compilers class I took at UW-Madison. It is a complete and functional compiler for the CSX langauge
             written using Java. It accepts CSX code (similar syntax to C) and compiles it into MIPS assembly code.
           </p>
           <p><strong>Skills: Java, Compilers</strong></p> 
 
-          <h4> <a href="https://github.com/zglazer/instapaper">Instapaper.c</a> - an Instapaper library written in C </h4>
-          <p>
+          <!-- <h4> <a href="https://github.com/zglazer/instapaper">Instapaper.c</a> - an Instapaper library written in C </h4>
+          <p class="">
           	This was a project I thought would be a fun introduction to working with APIs. Instapaper offers a very simple
           	API with a low barrier to entry that allowed me to quickly code and test a command line application.
           </p>
-          <p><strong> Skills: C </strong></p>
-        
+          <p><strong> Skills: C </strong></p> -->
 
           <h4> <a href="https://github.com/zglazer/Tic-Tac-Toe"> Tic-Tac-Toe.py </a> - a GUI tic-tac-toe implementation written in Python. </h4>
-          <p>
+          <p class="">
           	This was my first project I have ever made with any form of GUI and also my first Python program. 
           	I plan on making more simple Python GUI games as practice. GUI written using Tkinter. 
           </p>
           <p><strong> Skills: Python, Tkinter </strong></p>
-
-         <!--  <h4> <a href="https://github.com/zglazer/Projects"> Projects </a> - a list of various projects in serveral different languages and areas. </h4>
-          <p>
-            Projects were mostly taken from <a href="https://github.com/karan/Projects"> this list</a> of projects on GitHub. Each program is small
-            and is meant to help improve my fluency in a paticular programming language. Types of projects range from string maniupation to data structures and
-            algorithms. 
-          </p>
-          <p><strong> Skills: Varied </strong></p> -->
       
-          <h1><a name="contact"></a>Contact</h1>
-          <h4><a href="mailto:zglaze01@boun.cr">Email Me.</a></h4>
+          <h1 class="panel"><a name="contact"></a>Contact</h1>
+          <p><h4><a href="mailto:zglaze01@boun.cr">Email Me.</a></h4></p>
         </div>
 
-      <div class="footer">
+      <div class="container text-muted">
         <p>&copy; 2014 Zach Glazer</p>
       </div>
-
     </div> <!-- /container -->
 	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
