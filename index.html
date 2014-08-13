@@ -9,143 +9,152 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/narrow.css">
   <link rel="stylesheet" href="css/mystyle.css">
-	<link rel="shortcut icon" href="res/favicon.png">
+  <link rel="shortcut icon" href="res/favicon.png">
 </head>
 
 <body>
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#project">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">Zach Glazer <small>Madison, WI</small></h3>
+  <div class="container">
+
+    <div class="header">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <h3 class="text-muted">Zach Glazer <small>Madison, WI</small></h3>
+        </div>
+        <div class="col-lg-6 col-mg-6 col-sm-6 col-xs-12">
+          <ul class="nav nav-pills">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
       </div>
+    </div>
 
-      <!-- start jumbotron / flipper -->
-      <div class="jumbotron">
-        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-          <div class="flipper">
-            <div class="front">
-              <img src="res/self2.jpg" class="img-circle" height="180px">
-            </div>
-            <div class="back">
-              <img src="res/self2.jpg" class="img-circle" height="180px">
-            </div>
-          </div> <!-- end flipper -->
-        </div> <!-- end flip-container --> 
 
-        <h2>Professional Software Developer</h2>
-        <p class="lead">Hello, my name is Zach Glazer. I am a software engineer living in Madison, Wisconsin. 
-          My interest lies in using computers to make our lives more fun, creative, and productive. 
-        </p>
-        <p><a class="btn btn-primary btn-lg" href="http://github.com/zglazer" role="button">GitHub</a>
+    <!-- start jumbotron / flipper -->
+    <div class="jumbotron">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <img src="res/self2.jpg" class="img-circle" height="180px">
+          </div>
+          <div class="back">
+            <img src="res/self2.jpg" class="img-circle" height="180px">
+          </div>
+        </div> <!-- end flipper -->
+      </div> <!-- end flip-container --> 
+
+      <h2>Professional Software Developer</h2>
+      <p class="lead">Hello, my name is Zach Glazer. I am a software engineer living in Madison, Wisconsin. 
+        My interest lies in using computers to make our lives more fun, creative, and productive. 
+      </p>
+      <p><a class="btn btn-primary btn-lg" href="http://github.com/zglazer" role="button">GitHub</a>
         <a class="btn btn-primary btn-lg" href="http://lnkd.in/bbT8dYX" role="button">LinkedIn</a></p>
         <button type="button" class="btn btn-default btn-lg" style="border-style: none" id="aboutButton">
          <div class="h2">About Me</div><span class="glyphicon glyphicon-chevron-down"></span>
        </button>
-      </div> <!-- end jumbotron -->
+     </div> <!-- end jumbotron -->
 
-      <div class="row marketing">
-        <div class="col-lg-12">
-          <h1><a name="about" id="about"></a>About Me</h1>
-          <p>
-          	I am a recent graduate of UW-Madison, having studied computer science and biochemistry. I have had a long interest in computers but have
-          	only recently started pursuing software development as a career.
-          </p>
-          <p>
-          	I received my BS in biochemistry in December 2010 and soon after accepted 
-          	a position at Epic Systems Corporation in Madison, WI. After 2 years of work in healthcare IT, I decided I wanted to further my education in 
-          	computer sciences. In December 2013 I was awarded a certificate in computer sciences from UW-Madison. 
-          </p>
-          <p>
-            In my free time I enjoy learning new programming frameworks and tools. Recently I have been working with 
-            Python and the Flask web microframework.
-          </p>
+     <div class="row marketing">
+      <div class="col-lg-12">
+        <h1><a name="about" id="about"></a>About Me</h1>
+        <p>
+         I am a recent graduate of UW-Madison, having studied computer science and biochemistry. I have had a long interest in computers but have
+         only recently started pursuing software development as a career.
+       </p>
+       <p>
+         I received my BS in biochemistry in December 2010 and soon after accepted 
+         a position at Epic Systems Corporation in Madison, WI. After 2 years of work in healthcare IT, I decided I wanted to further my education in 
+         computer sciences. In December 2013 I was awarded a certificate in computer sciences from UW-Madison. 
+       </p>
+       <p>
+        In my free time I enjoy learning new programming frameworks and tools. Recently I have been working with 
+        Python and the Flask web microframework. 
+      </p>
 
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              <div class="panel-title"><h5>Technical Skills</h5></div>
-            </div>
-              <div class="panel-body">
-                <div class="table-responsive">
-                <table class="table table-hover">
-                  <tr>
-                    <th>Python</th>
-                    <th>Java</th>
-                    <th>JavaScript</th>
-                    <th>Database</th>
-                    <th>C / C++</th>
-                  </tr>
-                  <tr>
-                    <td>Flask</td>
-                    <td>Struts 2</td>
-                    <td>jQuery</td>
-                    <td>PostgreSQL</td>
-                    <td>Language</td>                    
-                  </tr>
-                  <tr>
-                    <td>SQLAlchemy</td>
-                    <td>Hibernate</td>
-                    <td>AngularJS</td>
-                    <td>SQLite</td>
-                    <td></td>
-                  </tr>
-                </table>
-              </div> <!-- end table-responsive -->
-                <p><strong>Other:</strong> HTML, CSS</p>
-                <p><strong>Operating Systems:</strong> UNIX</p>
-                <p><strong>Interests:</strong> Databases, Artificial Intelligence, Human Computer Interaction</p>
-                </table>
-              </div>
-          </div> <!-- end panel -->
-          
-          <h1 class=""><a name="project"></a>Project List</h1>
-          <p class="lead">
-          	Some of my recent and current projects are highlighted below.
-          </p>
-
-          <h4><a href="https://bookkeepr.herokuapp.com">Bookkeepr</a> - a minimal Flask application to keep track of books</h4>
-          <p class="">
-            This was a personal project aimed at creating a simple social networking site. Its main purpose was to 
-            give me more experience with Python and web development. The website is fully functional and ready to use. 
-            It gives the user a simple way to track his books. The site is currently in testing.
-          </p>
-          <p><strong>Skills: Python, Flask, SQLAlchemy ORM</strong></p>
-
-          <h4><a href="https://bitbucket.org/zglazer/csx_compiler">CSX Compiler</a> - a compiler for the CSX language written in Java</h4>
-          <p class="">
-            This was the final project for a compilers class I took at UW-Madison. It is a complete and functional compiler for the CSX langauge
-            written using Java. It accepts CSX code (similar syntax to C) and compiles it into MIPS assembly code.
-          </p>
-          <p><strong>Skills: Java, Compilers</strong></p> 
-
-          <h4> <a href="https://github.com/zglazer/Tic-Tac-Toe"> Tic-Tac-Toe.py </a> - a GUI tic-tac-toe implementation written in Python. </h4>
-          <p class="">
-          	This was my first project I made with any form of GUI and also my first Python program. 
-          	GUI written using Tkinter. 
-          </p>
-          <p><strong> Skills: Python, Tkinter </strong></p>
-      
-          <h1 class="panel"><a name="contact"></a>Contact</h1>
-          <p><h4><a href="mailto:zglaze01@boun.cr">Email Me.</a></h4></p>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <div class="panel-title"><h5>Technical Skills</h5></div>
         </div>
-
-      <div class="container text-muted">
-        <p>&copy; 2014 Zach Glazer</p>
+        <div class="panel-body">
+          <div class="table-responsive">
+            <table class="table table-hover">
+              <tr>
+                <th>Python</th>
+                <th>Java</th>
+                <th>JavaScript</th>
+                <th>Database</th>
+                <th>C / C++</th>
+              </tr>
+              <tr>
+                <td>Flask</td>
+                <td>Struts 2</td>
+                <td>jQuery</td>
+                <td>PostgreSQL</td>
+                <td>Language</td>                    
+              </tr>
+              <tr>
+                <td>SQLAlchemy</td>
+                <td>Hibernate</td>
+                <td>AngularJS</td>
+                <td>SQLite</td>
+                <td></td>
+              </tr>
+            </table>
+          </div> <!-- end table-responsive -->
+          <p><strong>Other:</strong> HTML, CSS</p>
+          <p><strong>Operating Systems:</strong> UNIX</p>
+          <p><strong>Interests:</strong> Databases, Artificial Intelligence, Human Computer Interaction</p>
+        </table>
       </div>
-    </div> <!-- /container -->
+    </div> <!-- end panel -->
+
+    <h1 class=""><a name="project"></a>Project List</h1>
+    <p class="lead">
+     Some of my projects are highlighted below.
+   </p>
+
+   <h4><a href="https://bookkeepr.herokuapp.com">Bookkeepr</a> - a minimal Flask application to keep track of books</h4>
+   <p class="">
+    This was a personal project aimed at creating a simple social networking site while
+    giving me more experience with Python and web development. The website is currently being tested but is
+    otherwise ready to be used. Feel free to ask for the source (it is not currently public).
+  </p>
+  <p><strong>Skills: Python, Flask, SQLAlchemy ORM</strong></p>
+
+  <h4><a href="https://bitbucket.org/zglazer/csx_compiler">CSX Compiler</a> - a compiler for the CSX language written in Java</h4>
+  <p class="">
+    This was the final project for a compilers class I took at UW-Madison. It is a complete and functional compiler for the CSX langauge
+    written using Java. It accepts CSX code (similar syntax to C) and compiles it into MIPS assembly code.
+  </p>
+  <p><strong>Skills: Java, Compilers</strong></p> 
+
+  <h4> <a href="https://github.com/zglazer/Tic-Tac-Toe"> Tic-Tac-Toe.py </a> - a GUI tic-tac-toe implementation written in Python. </h4>
+  <p class="">
+   This was my first project I made with any form of GUI and also my first Python program. 
+   GUI written using Tkinter. 
+ </p>
+ <p><strong> Skills: Python, Tkinter </strong></p>
+
+ <h1 class="panel"><a name="contact"></a>Contact</h1>
+ <p><h4><a href="mailto:zglaze01@boun.cr">Email Me.</a></h4></p>
+</div>
+
+<div class="container text-muted">
+  <p>&copy; 2014 Zach Glazer</p>
+</div>
+</div> <!-- /container -->
 </body>
 
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
 $("#aboutButton").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#about").offset().top
-    }, "slow");
+  $('html, body').animate({
+    scrollTop: $("#about").offset().top
+  }, "slow");
 });
 </script>
 
