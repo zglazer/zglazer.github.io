@@ -46,16 +46,21 @@
         </div> <!-- end flipper -->
       </div> <!-- end flip-container --> 
 
-      <h2>Professional Software Development & Hospital IT Consulting</h2>
-      <p class="lead">Hello, my name is Zach Glazer. I am a software engineer living in Miami Beach, Florida. 
-        My interest lies in using computers to make our lives more fun, creative, and productive. 
-      </p>
+      <h2>Software Development & Healthcare IT Professional</h2>
+      <div class="text-editor-wrap">
+        <div class="title-bar">bash - Zachary Glazer</div>
+        <div class="text-body"> 
+          <span class="typed"></span> 
+        </div>
+      </div> <!-- end text-editor -->
+
       <p> <!--<a class="btn btn-primary btn-lg" href="http://github.com/zglazer" role="button">GitHub</a> -->
         <a class="btn btn-primary btn-lg" href="http://lnkd.in/bbT8dYX" role="button">LinkedIn</a></p>
         <button type="button" class="btn btn-default btn-lg" style="border-style: none" id="aboutButton">
          <div class="h2">About Me</div><span class="glyphicon glyphicon-chevron-down"></span>
        </button>
      </div> <!-- end jumbotron -->
+
 
      <div class="row marketing">
       <div class="col-lg-12">
@@ -190,12 +195,29 @@
 <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
 <script src="js/jquery-2.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/typed.min.js"></script>
 <script>
 $("#aboutButton").click(function() {
   $('html, body').animate({
     scrollTop: $("#about").offset().top
   }, "slow");
 });
-</script>
 
+$(function(){
+  $(".typed").typed({
+    strings: ["Hello, my name is Zach Glazer.^1000", 
+    "I am a software engineer living in Miami Beach, Florida.^1000", 
+    "My interest lies in using computers to improve healthcare.^1000",
+    "^1000",
+    "Epic Application Certifications:^1000<br>* Procedure Orders<br>* Clinical Documentation<br>* SmartForms<br>* Reporting Workbench<br>* Clarity Data Model",
+    "Epic Technical Certifications:^1000<br>* Chronicles Database Programmer<br>* Informatics Programmer<br>* Interconnect Programmer<br>* Hyperspace Configuration^1000",
+    "Feel free to connect with me on LinkedIn."],
+    typeSpeed: 0,
+    backSpeed: -10,
+    contentType: 'html',
+
+  });
+});
+
+</script>
 </html>
