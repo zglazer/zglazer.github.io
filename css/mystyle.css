@@ -1,3 +1,8 @@
+body {
+  font-family: "Fira Sans";
+  font-weight: 500;
+}
+
 .jumbotron {
     background: transparent;
     padding: 5px 30px 30px 30px;

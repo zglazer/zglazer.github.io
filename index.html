@@ -8,31 +8,33 @@
 	<title> Zach Glazer - Software Development </title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/narrow.css">
+  <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
   <link rel="stylesheet" href="css/mystyle.css">
   <link rel="shortcut icon" href="res/favicon.png">
 </head>
 
 <body>
-  <div class="container">
+  <div class="container nav-container">
 
     <div class="header">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <h3 class="text-muted">Zach Glazer <small>Miami Beach, FL</small></h3>
+          <h3 class="text-muted">Zach Glazer <small>Chicago, IL</small></h3>
         </div>
         <div class="col-lg-6 col-mg-6 col-sm-6 col-xs-12">
           <ul class="nav nav-pills">
             <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#project">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a class="page-scroll" href="#about">About</a></li>
+            <li><a class="page-scroll" href="#knowledge">Knowledge</a></li>
+            <li><a class="page-scroll" href="#project">Projects</a></li>
+            <li><a class="page-scroll" href="#contact">Contact</a></li>
           </ul>
         </div>
-
       </div>
     </div>
+  </div>
 
-
+  <div class="container">
     <!-- start jumbotron / flipper -->
     <div class="jumbotron">
       <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
@@ -47,6 +49,10 @@
       </div> <!-- end flip-container --> 
 
       <h2>Software Development & Healthcare IT Professional</h2>
+      <p class="lead">
+        Looking to <span class="intro-type"></span>
+      </p>
+      <!-- 
       <div class="text-editor-wrap">
         <div class="title-bar">bash - Zachary Glazer</div>
         <div class="text-body"> 
@@ -55,12 +61,13 @@
       </div> <!-- end text-editor -->
 
       <p> <!--<a class="btn btn-primary btn-lg" href="http://github.com/zglazer" role="button">GitHub</a> -->
-        <a class="btn btn-primary btn-lg" href="http://lnkd.in/bbT8dYX" role="button">LinkedIn</a></p>
+        <a class="btn btn-primary btn-lg" href="https://github.com/zglazer">GitHub</a>
+        <a class="btn btn-primary btn-lg" href="http://lnkd.in/bbT8dYX" role="button">LinkedIn</a>
+      </p>
         <button type="button" class="btn btn-default btn-lg" style="border-style: none" id="aboutButton">
          <div class="h2">About Me</div><span class="glyphicon glyphicon-chevron-down"></span>
        </button>
      </div> <!-- end jumbotron -->
-
 
      <div class="row marketing">
       <div class="col-lg-12">
@@ -70,20 +77,19 @@
          continue to do great work in the software industry.
        </p>
        <p>
-         I received my BS in biochemistry in December 2010 and soon after accepted 
-         a position at Epic Systems Corporation in Madison, WI. After 2 years of work in healthcare IT, I decided I wanted to further my education in 
-         computer sciences. In December 2013 I was awarded a certificate in computer sciences from UW-Madison with high honors. 
+         In healthcare IT I have worked for both a software vendor (Epic Systems Corporation) as well as a large hospital system. I 
+         continue to have interest in improving patient care using my technical knowledge.
        </p>
        <p>
-         I currently work as a Clinical Informatics Analyst at Mount Sinai Medical Center in Miami Beach. My technical industry knowledge and 
-         custom development are assisting the organization to improve patient care. 
+         My most recent project has been <a href="http://www.gustosites.com">Gusto Sites</a>, a small web development shop I started with 
+         my partner <a href="http://www.jrdnwlkr.com">Jordan Walker</a>, aimed at serving our local Chicago community.
        </p>
        <p>
-        In my free time I enjoy learning new programming frameworks and tools. Recently I have been working with 
-        Ansible to improve system administration on Amazon Web Services. 
+        In my free time I enjoy learning new programming frameworks and tools. Recently I have been experimenting with 
+        Go to enhance server administration. 
       </p>
 
-
+      <h1><a name="knowledge" id="knowledge"></a>Knowledge</h1>
       <div class="panel panel-primary">
         <div class="panel-heading">
           <div class="panel-title"><h5>Epic Systems Certifications</h5></div>
@@ -152,14 +158,14 @@
               </tr>
               <tr>
                 <td>Flask</td>
-                <td>Struts 2</td>
-                <td>jQuery</td>
+                <td>Dropwizard</td>
+                <td>NodeJS</td>
                 <td>PostgreSQL</td>
                 <td>C/C++ Language</td>                    
               </tr>
               <tr>
                 <td>SQLAlchemy</td>
-                <td>Hibernate</td>
+                <td>JDBI</td>
                 <td>AngularJS</td>
                 <td>SQLite</td>
                 <td>PHP</td>
@@ -167,7 +173,7 @@
               <tr>
                 <td></td>
                 <td></td>
-                <td></td>
+                <td>jQuery</td>
                 <td>MySQL</td>
                 <td>Wordpress</td>
               </tr>
@@ -180,51 +186,62 @@
       </div>
     </div> <!-- end Technical Skills -->
 
-    <h1 class=""><a name="project"></a>Project List</h1>
+    <h1 class=""><a name="project" id="project"></a>Project List</h1>
     <p class="lead">
      Some of my projects are highlighted below.
    </p>
 
+   <h4><a href="http://www.gustosites.com">Gusto Sites</a> - a web design and development company</h4>
+   <p>
+     Gusto Sites is a web design and development company that was founded to bring the latest technology to 
+     small businesses in the Chicago area and around the country.
+   </p>
+
    <h4><a href="https://bookkeepr.herokuapp.com">Bookkeepr</a> - a minimal Flask application to keep track of books</h4>
-   <p class="">
+   <p>
     This was a personal project aimed at creating a simple social networking site while
     giving me more experience with Python and web development. The website is currently being tested but is
     otherwise ready to be used. Feel free to ask for the source (it is not currently public).
   </p>
   <p><strong>Skills: Python, Flask, SQLAlchemy ORM, Heroku</strong></p>
 
-  <h4><a href="https://bitbucket.org/zglazer/csx_compiler">CSX Compiler</a> - a compiler for the CSX language written in Java</h4>
-  <p class="">
+  <h4><a href="https://bitbucket.org/zglazer/csx_compiler/src">CSX Compiler</a> - a compiler for the CSX language written in Java</h4>
+  <p>
     This was the final project for a compilers class I took at UW-Madison. It is a complete and functional compiler for the CSX langauge
     written using Java. It accepts CSX code (similar syntax to C) and compiles it into MIPS assembly code.
   </p>
   <p><strong>Skills: Java, Compilers</strong></p> 
-  <!--
-  <h4> <a href="https://github.com/zglazer/Tic-Tac-Toe"> Tic-Tac-Toe.py </a> - a GUI tic-tac-toe implementation written in Python. </h4>
-  <p class="">
-   This was my first project I made with any form of GUI and also my first Python program. 
-   GUI written using Tkinter. 
- </p>
- <p><strong> Skills: Python, Tkinter </strong></p>
-  -->
- <h1 class="panel"><a name="contact"></a>Contact</h1>
- <p><h4><a href="mailto:zglaze01@boun.cr">Email Me.</a></h4></p>
-</div>
 
-<div class="container text-muted">
-  <p>&copy; 2015 Zach Glazer</p>
+ <h1 class="panel"><a name="contact" id="contact"></a>Contact</h1>
+ <p><h4><a href="mailto:zglaze01@boun.cr">Email Me.</a></h4></p>
+
+<div class="text-muted">
+  <p>&copy; 2016 Zach Glazer</p>
 </div>
 </div> <!-- /container -->
 </body>
 
 <script src="js/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/typed.min.js"></script>
 <script>
+jQuery.easing.def = "easeOutQuart"; 
+
 $("#aboutButton").click(function() {
   $('html, body').animate({
     scrollTop: $("#about").offset().top
-  }, "slow");
+  }, 1200);
+});
+
+$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1200);
+        event.preventDefault();
+    });
 });
 
 // TypedJS function
@@ -241,6 +258,10 @@ $(function(){
     backSpeed: -10,
     contentType: 'html',
   });
+  $(".intro-type").typed({
+    strings: ["lead^1000", "develop^1000", "create^1000", "learn^1000", "code^1000"],
+    contentType: 'html',
+  });
 });
 </script>
 
@@ -254,5 +275,4 @@ $(function(){
   ga('send', 'pageview');
 
 </script>
-
 </html>
