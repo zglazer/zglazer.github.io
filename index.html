@@ -52,13 +52,6 @@
       <p class="lead">
         Looking to <span class="intro-type"></span>
       </p>
-      <!-- 
-      <div class="text-editor-wrap">
-        <div class="title-bar">bash - Zachary Glazer</div>
-        <div class="text-body"> 
-          <span class="typed"></span> 
-        </div>
-      </div> <!-- end text-editor -->
 
       <p> <!--<a class="btn btn-primary btn-lg" href="http://github.com/zglazer" role="button">GitHub</a> -->
         <a class="btn btn-primary btn-lg" href="https://github.com/zglazer">GitHub</a>
@@ -73,24 +66,12 @@
       <div class="col-lg-12">
         <h1><a name="about" id="about"></a>About Me</h1>
         <p>
-         I am a graduate of UW-Madison, having studied both computer science and biochemistry. I have had a life long interest in computers and want to
-         continue to do great work in the software industry.
+         I am a UW-Madison alumnus with degrees in both computer science and biochemistry. I bring with me a history of proven success in the technology industry and 
+         a passion to learn and improve. It is my goal to have a long and fulfilling career in software development.
        </p>
-       <p>
-         In healthcare IT I have worked for both a software vendor (Epic Systems Corporation) as well as a large hospital system. I 
-         continue to have interest in improving patient care using my technical knowledge.
-       </p>
-       <p>
-         My most recent project has been <a href="http://www.gustosites.com">Gusto Sites</a>, a small web development shop I started with 
-         my partner <a href="http://www.jrdnwlkr.com">Jordan Walker</a>, aimed at serving our local Chicago community.
-       </p>
-       <p>
-        In my free time I enjoy learning new programming frameworks and tools. Recently I have been experimenting with 
-        Go to enhance server administration. 
-      </p>
 
-      <h1><a name="knowledge" id="knowledge"></a>Knowledge</h1>
-      <div class="panel panel-primary">
+      <h1><a name="knowledge" id="knowledge"></a>Knowledge <button id="toggle-show" class="btn btn-primary">Show Epic Skills</button><button id="toggle-hide" class="btn btn-primary hidden">Hide Epic Skills</button></h1>
+      <div class="panel panel-primary hidden" id="epic-skills">
         <div class="panel-heading">
           <div class="panel-title"><h5>Epic Systems Certifications</h5></div>
         </div>
@@ -147,6 +128,12 @@
           <div class="panel-title"><h5>Technical Skills</h5></div>
         </div>
         <div class="panel-body">
+          <p>
+            I have had the experience of programming in many different languages most notably Java, Python, JavaScript, and PHP.
+          </p>
+          <p>
+            Some tools I have experience with are below.
+          </p>
           <div class="table-responsive">
             <table class="table table-hover">
               <tr>
@@ -157,60 +144,126 @@
                 <th>Other</th>
               </tr>
               <tr>
-                <td>Flask</td>
-                <td>Dropwizard</td>
-                <td>NodeJS</td>
-                <td>PostgreSQL</td>
-                <td>C/C++ Language</td>                    
+                <td><code>Flask</code></td>
+                <td><code>Spring Boot</code></td>
+                <td><code>React</code></td>
+                <td><code>PostgreSQL</code></td>
+                <td><code>TDD/BDD</code></td>                    
               </tr>
               <tr>
-                <td>SQLAlchemy</td>
-                <td>JDBI</td>
-                <td>AngularJS</td>
-                <td>SQLite</td>
-                <td>PHP</td>
+                <td><code>SQLAlchemy</code></td>
+                <td><code>Hibernate/JPA</code></td>
+                <td><code>AngularJS</code></td>
+                <td><code>SQLite</code></td>
+                <td><code>PHP/Wordpress</code></td>
               </tr>
               <tr>
                 <td></td>
+                <td><code>Dropwizard</code></td>
+                <td><code>NodeJS</code></td>
+                <td><code>MySQL</code></td>
+                <td><code>C/C++ Language</code></td>
+              </tr>
                 <td></td>
-                <td>jQuery</td>
-                <td>MySQL</td>
-                <td>Wordpress</td>
+                <td></td>
+                <td><code>jQuery</code></td>
+                <td></td>
+                <td></td>
+              <tr>
               </tr>
             </table>
           </div> <!-- end table-responsive -->
-          <p><strong>Other:</strong> HTML, CSS</p>
+          <p><strong>Other:</strong> HTML, CSS, Git</p>
           <p><strong>Operating Systems:</strong> UNIX/Linux</p>
-          <p><strong>Interests:</strong> Databases, Artificial Intelligence, Human Computer Interaction</p>
+          <p><strong>Interests:</strong> Design Patterns, Artificial Intelligence, Human Computer Interaction</p>
         </table>
       </div>
     </div> <!-- end Technical Skills -->
 
-    <h1 class=""><a name="project" id="project"></a>Project List</h1>
-    <p class="lead">
-     Some of my projects are highlighted below.
-   </p>
+</div>
+</div>
+</div>
 
-   <h4><a href="http://www.gustosites.com">Gusto Sites</a> - a web design and development company</h4>
-   <p>
-     Gusto Sites is a web design and development company that was founded to bring the latest technology to 
-     small businesses in the Chicago area and around the country.
-   </p>
+<!-- Projects -->
+<div class="container-fluid">
+  <div clas="row">
+    <div class="col-lg-12">
+      <h1 class="text-center"><a name="project" id="project"></a>Projects</h1>
+    </div>
+  </div>
+  
+  <div class="row margin-top">
+    <div class="col-lg-6 col-md-6">
+          <a href="https://opm-demo.herokuapp.com" target="_blank">
+            <img class="wow fadeInLeft img-responsive" src="res/opm.png" alt="OPM Demo Screenshot">
+          </a>
+    </div>
+    <div class="col-lg-6 col-md-6">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+          <h4 class="media-heading">A Property Management System</h4>
+          <p>
+            Improving workflow and efficiency at small property management companies.
+          </p>
+          <p>
+          <code>Java</code> <code>Spring</code> <code>JavaScript</code> <code>React</code>
+          </p>
+          <a href="https://github.com/zglazer/opm" target="_blank">View Source</a><br />
+          <a href="https://opm-demo.herokuapp.com" target="_blank">View Demo</a> <small>(please allow a moment for process to wake up)</small>
+        </div>
+      </div>
+    </div>
+  </div>
 
-   <h4><a href="https://bookkeepr.herokuapp.com">Bookkeepr</a> - a minimal Flask application to keep track of books</h4>
-   <p>
-    This was a personal project aimed at creating a simple social networking site while
-    giving me more experience with Python and web development. The website is currently being tested but is
-    otherwise ready to be used. Feel free to ask for the source (it is not currently public).
-  </p>
-  <p><strong>Skills: Python, Flask, SQLAlchemy ORM, Heroku</strong></p>
+  <div class="row margin-top">
+    <div class="col-lg-6 col-lg-push-6 col-md-6 col-md-push-6">
+          <a href="https://bookkeepr.herokuapp.com" target="_blank">
+            <img class="wow fadeInRight img-responsive" data-wow-delay="1s" src="res/bookkeepr.png" alt="OPM Demo Screenshot">
+          </a>
+    </div>  
+    <div class="col-lg-6 col-lg-pull-6 col-md-6 col-md-pull-6">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <h4 class="media-heading">A Social Network</h4>
+          <p>
+            Share the books you love.
+          </p>
+          <p>
+          <code>Python</code> <code>Flask</code> <code>JavaScript</code>
+          </p>
+          <a href="https://github.com/zglazer/bookkeepr" target="_blank">View Source</a><br />
+          <a href="https://bookkeepr.herokuapp.com" target="_blank">View Demo</a> <small>(please allow a moment for process to wake up)</small>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <h4><a href="https://bitbucket.org/zglazer/csx_compiler/src">CSX Compiler</a> - a compiler for the CSX language written in Java</h4>
-  <p>
-    This was the final project for a compilers class I took at UW-Madison. It is a complete and functional compiler for the CSX langauge
-    written using Java. It accepts CSX code (similar syntax to C) and compiles it into MIPS assembly code.
-  </p>
-  <p><strong>Skills: Java, Compilers</strong></p> 
+  <div class="row margin-top">
+    <div class="col-lg-6 col-md-6">
+      <img class="wow fadeInLeft img-responsive" data-wow-delay="1s" src="res/mvmt.png" alt="OPM Demo Screenshot">
+    </div>
+    <div class="col-lg-6 col-md-6">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+          <h4 class="media-heading">A Command Line Utility</h4>
+          <p>
+            Easily configure and deploy static websites on Amazon S3.
+          </p>
+          <p>
+          <code>Python</code> <code>Boto</code> <code>Amazon S3</code> <code>docopt</code>
+          </p>
+          <a href="https://github.com/zglazer/mvmt" target="_blank">View Source</a><br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div> <!-- Projects -->
+
+
+
+<div class="container">
+<div class="row marketing">
 
  <h1 class="panel"><a name="contact" id="contact"></a>Contact</h1>
  <p><h4><a href="mailto:zglaze01@boun.cr">Email Me.</a></h4></p>
@@ -218,20 +271,35 @@
 <div class="text-muted">
   <p>&copy; 2016 Zach Glazer</p>
 </div>
+</div> <!-- end col-lg-12 --> 
+</div> <!-- end row marketing -->
 </div> <!-- /container -->
+
 </body>
 
 <script src="js/jquery-2.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/typed.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script>
 jQuery.easing.def = "easeOutQuart"; 
+new WOW().init();
 
-$("#aboutButton").click(function() {
-  $('html, body').animate({
-    scrollTop: $("#about").offset().top
-  }, 1200);
+$(function() {
+  // big about button scroll
+  $("#aboutButton").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#about").offset().top
+    }, 1200);
+  });
+
+  // show/hide Epic knowledge
+  $("#toggle-show, #toggle-hide").on('click', function(e) {
+    $("#epic-skills").toggleClass('hidden');
+    $("#toggle-show").toggleClass('hidden');
+    $("#toggle-hide").toggleClass('hidden');
+  });
 });
 
 $(function() {
