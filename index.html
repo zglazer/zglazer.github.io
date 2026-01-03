@@ -1,346 +1,190 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="author" content="Zach Glazer">
-	<title> Zach Glazer - Software Development </title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/narrow.css">
-  <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
-  <link rel="stylesheet" href="css/mystyle.css">
-  <link rel="shortcut icon" href="res/favicon.png">
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>glazer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: light;
+      }
 
-<body>
-  <div class="container nav-container">
+      * {
+        box-sizing: border-box;
+      }
 
-    <div class="header">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <h3 class="text-muted">Zach Glazer <small>Chicago, IL</small></h3>
-        </div>
-        <div class="col-lg-6 col-mg-6 col-sm-6 col-xs-12">
-          <ul class="nav nav-pills">
-            <li><a href="#">Home</a></li>
-            <li><a class="page-scroll" href="#about">About</a></li>
-            <li><a class="page-scroll" href="#knowledge">Knowledge</a></li>
-            <li><a class="page-scroll" href="#project">Projects</a></li>
-            <li><a class="page-scroll" href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+      body {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 3rem 1.5rem 4rem;
+        font-family: "Space Grotesk", "SF Pro Text", "Helvetica Neue", Arial,
+          sans-serif;
+        line-height: 1.7;
+        color: #222;
+        background: #f8f9fb;
+        font-size: 16px;
+      }
 
-  <div class="container">
-    <!-- start jumbotron / flipper -->
-    <div class="jumbotron">
-      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-        <div class="flipper">
-          <div class="front">
-            <img src="res/kayak.jpg" class="img-circle" height="180px">
-          </div>
-          <div class="back">
-            <img src="res/kayak.jpg" class="img-circle" height="180px">
-          </div>
-        </div> <!-- end flipper -->
-      </div> <!-- end flip-container --> 
+      header {
+        margin-bottom: 2rem;
+      }
 
-      <h2>Software Development & Healthcare IT Professional</h2>
-      <p class="lead">
-        Looking to <span class="intro-type"></span>
+      h1 {
+        font-size: 2.3rem;
+        margin: 0 0 0.4rem;
+        font-weight: 600;
+        line-height: 1.2;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+        margin: 3rem 0 1rem;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        text-transform: lowercase;
+        color: #222;
+      }
+
+      p {
+        margin: 0 0 1.2rem;
+        color: #444;
+      }
+
+      ul {
+        margin: 0 0 1.2rem;
+        padding-left: 1.25rem;
+      }
+
+      li {
+        margin-bottom: 0.9rem;
+      }
+
+      .tagline {
+        color: #555;
+        font-size: 1rem;
+      }
+
+      .section {
+        border-top: 1px solid #e2e3e7;
+        padding-top: 1.5rem;
+      }
+
+      .meta {
+        font-size: 0.95rem;
+        color: #555;
+      }
+
+      a {
+        color: #111;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding-bottom: 0.05em;
+      }
+
+      a:hover {
+        border-color: #111;
+      }
+
+      .contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .contact a {
+        border-bottom: none;
+        padding: 0.2rem 0.8rem;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 640px) {
+        body {
+          padding: 2rem 1.25rem 3rem;
+          font-size: 15px;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Zach Glazer</h1>
+      <p class="tagline">
+        Software engineer building automation and integration systems for ops
+        teams.
       </p>
+    </header>
 
-      <p> <!--<a class="btn btn-primary btn-lg" href="http://github.com/zglazer" role="button">GitHub</a> -->
-        <a class="btn btn-primary btn-lg" href="https://github.com/zglazer">GitHub</a>
-        <a class="btn btn-primary btn-lg" href="http://lnkd.in/bbT8dYX" role="button">LinkedIn</a>
+    <section class="section">
+      <h2>me</h2>
+      <p>
+        I'm Zach, a software engineer who fixes and automates workflows. I
+        work full-time at Iru (formerly Kandji). I also collaborate with teams
+        to streamline their ops and integrations when there's a good fit. Right
+        now I'm focused on infrastructure-as-code and automating server
+        workflows.
       </p>
-        <button type="button" class="btn btn-default btn-lg" style="border-style: none" id="aboutButton">
-         <div class="h2">About Me</div><span class="glyphicon glyphicon-chevron-down"></span>
-       </button>
-     </div> <!-- end jumbotron -->
+    </section>
+    <section class="section">
+      <h2>work</h2>
+      <p>
+        Previously I helped launch The Coda Collection from 0->1, developed new
+        products at ActiveCampaign, and maintained existing ones at Rocketmiles,
+        Vivid Seats, and Epic. At
+        <a target="_blank" rel="noreferrer" href="https://iru.com"
+          >Iru (formerly Kandji)</a
+        >
+        I help automate and improve endpoint management for IT administrators.
+      </p>
+    </section>
 
-     <div class="row marketing">
-      <div class="col-lg-12">
-        <h1><a name="about" id="about"></a>About Me</h1>
-        <p>
-         I am a UW-Madison alumnus with degrees in both computer science and biochemistry. I bring with me a history of proven success in the technology industry and 
-         a passion to learn and improve. It is my goal to have a long and fulfilling career in software development.
-       </p>
+    <section class="section">
+      <h2>projects</h2>
+      <p>
+        I partner with strong teams on high-leverage automation projects, data
+        plumbing, and lightweight apps. A few recent examples:
+      </p>
+      <ul>
+        <li>
+          <strong>Financial ops automation.</strong>
+          Creating new integrations between multiple systems has helped teams
+          cut out repetitive work and get hours of their week back (estimated 5 hours/week).
+        </li>
+        <li>
+          <strong>Healthcare EHR reporting.</strong>
+          Automated daily patient reports across a multi-location med spa,
+          eliminating hours of manual prep each day (estimated 2 hours/day).
+        </li>
+      </ul>
+    </section>
 
-      <h1><a name="knowledge" id="knowledge"></a>Knowledge <button id="toggle-show" class="btn btn-primary">Show Epic Skills</button><button id="toggle-hide" class="btn btn-primary hidden">Hide Epic Skills</button></h1>
-      <div class="panel panel-primary hidden" id="epic-skills">
-        <div class="panel-heading">
-          <div class="panel-title"><h5>Epic Systems Certifications</h5></div>
-        </div>
-        <div class="panel-body">
-          <div class="table-responsive">
-            <table class="table table-hover">
-              <tr>
-                <th>Technical</th>
-                <th>Application</th>
-                <th>Reporting</th>
-                <th>Clinical Tools</th>
-              </tr>
-              <tr>
-                <td>Chronicles Database Programmer</td> 
-                <td>Procedure Orders</td>
-                <td>Reporting Workbench</td>  
-                <td>Clinical Administration</td>              
-              </tr>
-              <tr>
-                <td>Informatics Programmer</td>
-                <td>Clinical Documentation</td>
-                <td>Clarity Data Model</td>
-                <td>SmartForms</td>
-              </tr>
-              <tr>
-                <td>Interconnect Programmer</td>
-                <td>Order Transmittal</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Chronicles Install Utilities</td>
-                <td>Decision Support</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Hyperspace Configuration</td>
-                <td>MyChart</td>
-                <td></td>
-                <td></td>
-              </tr>
-            </table>
-          </div> <!-- end table-responsive -->
-          <p>I am extremely knowledgeable in healthcare IT and related hospital workflows. I specialize in creating 
-            custom build to help optimize large hospital systems, improve patient care, and increase user engagement.</p>
-          <p><strong>Other:</strong> Data Courier, Stork, Ambulatory</p>
-        </table>
+    <section class="section">
+      <h2>contact</h2>
+      <div class="contact">
+        <a href="mailto:hello@zachglazer.com">&#128075; hello@zachglazer.com</a>
+
+        <a href="https://github.com/zglazer" target="_blank" rel="noreferrer"
+          >github</a
+        >
+        <a
+          href="https://www.linkedin.com/in/zachglazer"
+          target="_blank"
+          rel="noreferrer"
+          >linkedin</a
+        >
       </div>
-    </div> <!-- end Epic Certifications -->
-
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          <div class="panel-title"><h5>Technical Skills</h5></div>
-        </div>
-        <div class="panel-body">
-          <p>
-            I have had the experience of programming in many different languages most notably Java, Python, JavaScript, and PHP.
-          </p>
-          <p>
-            Some tools I have experience with are below.
-          </p>
-          <div class="table-responsive">
-            <table class="table table-hover">
-              <tr>
-                <th>Python</th>
-                <th>Java</th>
-                <th>JavaScript</th>
-                <th>Database</th>
-                <th>Other</th>
-              </tr>
-              <tr>
-                <td><code>Flask</code></td>
-                <td><code>Spring Boot</code></td>
-                <td><code>React</code></td>
-                <td><code>PostgreSQL</code></td>
-                <td><code>TDD/BDD</code></td>                    
-              </tr>
-              <tr>
-                <td><code>SQLAlchemy</code></td>
-                <td><code>Hibernate/JPA</code></td>
-                <td><code>AngularJS</code></td>
-                <td><code>SQLite</code></td>
-                <td><code>PHP/Wordpress</code></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td><code>Dropwizard</code></td>
-                <td><code>NodeJS</code></td>
-                <td><code>MySQL</code></td>
-                <td><code>C/C++ Language</code></td>
-              </tr>
-                <td></td>
-                <td></td>
-                <td><code>jQuery</code></td>
-                <td></td>
-                <td></td>
-              <tr>
-              </tr>
-            </table>
-          </div> <!-- end table-responsive -->
-          <p><strong>Other:</strong> HTML, CSS, Git</p>
-          <p><strong>Operating Systems:</strong> UNIX/Linux</p>
-          <p><strong>Interests:</strong> Design Patterns, Artificial Intelligence, Human Computer Interaction</p>
-        </table>
-      </div>
-    </div> <!-- end Technical Skills -->
-
-</div>
-</div>
-</div>
-
-<!-- Projects -->
-<div class="container-fluid">
-  <div clas="row">
-    <div class="col-lg-12">
-      <h1 class="text-center"><a name="project" id="project"></a>Projects</h1>
-    </div>
-  </div>
-  
-  <div class="row margin-top">
-    <div class="col-lg-6 col-md-6">
-          <a href="https://opm-demo.herokuapp.com" target="_blank">
-            <img class="wow fadeInLeft img-responsive" src="res/opm.png" alt="OPM Demo Screenshot">
-          </a>
-    </div>
-    <div class="col-lg-6 col-md-6">
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
-          <h4 class="media-heading">A Property Management System</h4>
-          <p>
-            Improving workflow and efficiency at small property management companies.
-          </p>
-          <p>
-          <code>Java</code> <code>Spring</code> <code>JavaScript</code> <code>React</code>
-          </p>
-          <a href="https://github.com/zglazer/opm" target="_blank">View Source</a><br />
-          <a href="https://opm-demo.herokuapp.com" target="_blank">View Demo</a> <small>(please allow a moment for process to wake up)</small>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row margin-top">
-    <div class="col-lg-6 col-lg-push-6 col-md-6 col-md-push-6">
-          <a href="https://bookkeepr.herokuapp.com" target="_blank">
-            <img class="wow fadeInRight img-responsive" data-wow-delay="1s" src="res/bookkeepr.png" alt="OPM Demo Screenshot">
-          </a>
-    </div>  
-    <div class="col-lg-6 col-lg-pull-6 col-md-6 col-md-pull-6">
-      <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
-          <h4 class="media-heading">A Social Network</h4>
-          <p>
-            Share the books you love.
-          </p>
-          <p>
-          <code>Python</code> <code>Flask</code> <code>JavaScript</code>
-          </p>
-          <a href="https://github.com/zglazer/bookkeepr" target="_blank">View Source</a><br />
-          <a href="https://bookkeepr.herokuapp.com" target="_blank">View Demo</a> <small>(please allow a moment for process to wake up)</small>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row margin-top">
-    <div class="col-lg-6 col-md-6">
-      <img class="wow fadeInLeft img-responsive" data-wow-delay="1s" src="res/mvmt.png" alt="OPM Demo Screenshot">
-    </div>
-    <div class="col-lg-6 col-md-6">
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
-          <h4 class="media-heading">A Command Line Utility</h4>
-          <p>
-            Easily configure and deploy static websites on Amazon S3.
-          </p>
-          <p>
-          <code>Python</code> <code>Boto</code> <code>Amazon S3</code> <code>docopt</code>
-          </p>
-          <a href="https://github.com/zglazer/mvmt" target="_blank">View Source</a><br />
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div> <!-- Projects -->
-
-
-
-<div class="container">
-<div class="row marketing">
-
- <h1 class="panel"><a name="contact" id="contact"></a>Contact</h1>
- <p><h4><a href="mailto:zglaze01@boun.cr">Email Me.</a></h4></p>
-
-<div class="text-muted">
-  <p>&copy; 2016 Zach Glazer</p>
-</div>
-</div> <!-- end col-lg-12 --> 
-</div> <!-- end row marketing -->
-</div> <!-- /container -->
-
-</body>
-
-<script src="js/jquery-2.1.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/typed.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script>
-jQuery.easing.def = "easeOutQuart"; 
-new WOW().init();
-
-$(function() {
-  // big about button scroll
-  $("#aboutButton").click(function() {
-    $('html, body').animate({
-      scrollTop: $("#about").offset().top
-    }, 1200);
-  });
-
-  // show/hide Epic knowledge
-  $("#toggle-show, #toggle-hide").on('click', function(e) {
-    $("#epic-skills").toggleClass('hidden');
-    $("#toggle-show").toggleClass('hidden');
-    $("#toggle-hide").toggleClass('hidden');
-  });
-});
-
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1200);
-        event.preventDefault();
-    });
-});
-
-// TypedJS function
-$(function(){
-  $(".typed").typed({
-    strings: ["Hello, my name is Zach Glazer.^1000", 
-    "I am a software engineer living in Miami Beach, Florida.^1000", 
-    "I use computers to improve healthcare.^1000",
-    "^1000",
-    "Epic Application Certifications:^1000<br>* Procedure Orders<br>* Order Transmittal<br>* Clinical Documentation<br>* Decision Support<br>* MyChart<br>* SmartForms<br>* Reporting Workbench<br>* Clarity Data Model",
-    "Epic Technical Certifications:^1000<br>* Chronicles Database Programmer<br>* Informatics Programmer<br>* Chronicles Install Utilities<br>* Interconnect Programmer<br>* Hyperspace Configuration^1000",
-    "Feel free to connect with me.^1000<br><br><br>&#62; zachglazer at gmail dot com"],
-    typeSpeed: 0,
-    backSpeed: -10,
-    contentType: 'html',
-  });
-  $(".intro-type").typed({
-    strings: ["lead^1000", "develop^1000", "create^1000", "learn^1000", "code^1000"],
-    contentType: 'html',
-  });
-});
-</script>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-65249691-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+    </section>
+  </body>
 </html>
