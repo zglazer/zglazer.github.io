@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -15,6 +15,7 @@
         color-scheme: light;
         --ink: #222;
         --muted: #444;
+        --muted-soft: #5a5a5a;
         --paper: #f6f7f9;
         --panel: #ffffff;
         --line: #e2e3e7;
@@ -70,8 +71,9 @@
       }
 
       .tagline {
-        color: var(--muted);
-        font-size: 1rem;
+        color: var(--muted-soft);
+        font-size: 0.9rem;
+        font-weight: 300;
       }
 
       .section {
@@ -108,6 +110,16 @@
         border: 1px solid var(--line);
         border-radius: 5px;
         font-size: 0.9rem;
+        transition: transform 120ms ease, box-shadow 120ms ease,
+          border-color 120ms ease, background-color 120ms ease;
+      }
+
+      .contact a:hover,
+      .contact a:focus-visible {
+        background: #ffffff;
+        border-color: rgba(34, 34, 34, 0.18);
+        box-shadow: 0 6px 14px rgba(34, 34, 34, 0.08);
+        transform: translateY(-1px);
       }
 
       @media (max-width: 640px) {
@@ -135,9 +147,9 @@
     <section class="section">
       <h2>me</h2>
       <p>
-        I'm Zach, a software engineer who fixes and automates workflows. I work
-        full-time at Iru (formerly Kandji). I also collaborate with teams to
-        streamline their ops and integrations when there's a good fit.
+        I'm Zach, a software engineer focused on APIs, automation, integrations,
+        and reducing operational friction. I like shipping pragmatic tools that
+        turn messy workflows into reliable systems.
       </p>
       <p class="meta">
         Currently I'm exploring how AI tooling can improve development workflows
@@ -152,11 +164,6 @@
           >Iru (formerly Kandji)</a
         >. Previously, I helped launch The Coda Collection and developed new
         products at ActiveCampaign, Rocketmiles, and Vivid Seats.
-        <!-- Previously I helped launch The Coda Collection from 0->1, developed new
-      products at ActiveCampaign, and maintained existing ones at Rocketmiles,
-      Vivid Seats, and Epic. At
-      <a target="_blank" rel="noreferrer" href="https://iru.com">Iru (formerly Kandji)</a>
-      I help automate and improve endpoint management for IT administrators. -->
       </p>
     </section>
 
@@ -183,8 +190,6 @@
     <section class="section">
       <h2>contact</h2>
       <div class="contact">
-        <a href="mailto:hello@zachglazer.com">&#128075; hello@zachglazer.com</a>
-
         <a href="https://github.com/zglazer" target="_blank" rel="noreferrer"
           >github</a
         >
